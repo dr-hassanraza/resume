@@ -1,0 +1,175 @@
+# ============================================
+# Resume Optimizer Chatbot - .gitignore
+# ============================================
+
+# ====== ENVIRONMENT FILES ======
+# Never commit sensitive environment variables
+.env
+.env.local
+.env.development.local 
+.env.production.local
+.env.*.local
+
+# ====== DEPENDENCIES ======
+# Node.js dependencies
+node_modules/
+*/node_modules/
+frontend/node_modules/
+mobile/node_modules/
+
+# Python virtual environment
+backend/venv/
+venv/
+env/
+
+# Package lock files (choose one strategy)
+# Option 1: Include lock files (recommended for consistency)
+# package-lock.json
+# Option 2: Exclude lock files (if team uses different package managers)
+# package-lock.json
+# yarn.lock
+
+# ====== BUILD OUTPUTS ======
+# React/Next.js build outputs
+frontend/build/
+frontend/.next/
+frontend/out/
+build/
+.next/
+out/
+dist/
+
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg-info/
+
+# ====== DATABASE FILES ======
+# SQLite databases (contain user data - don't commit)
+*.db
+*.sqlite
+*.sqlite3
+resume_optimizer.db
+
+# Database migrations (keep these)
+# !database/migrations/
+# !*/migrations/
+
+# ====== UPLOADED FILES ======
+# User uploaded resumes and files
+backend/uploads/
+uploads/
+frontend/public/uploads/
+
+# ====== LOG FILES ======
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+
+# ====== TEMPORARY FILES ======
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows system files
+*.tmp
+*.temp
+.tmp/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ====== DOCKER ======
+# Docker images and containers
+*.dmg
+docker-compose.override.yml
+docker-compose.dev.yml.bak
+
+# ====== AI/ML MODELS ======
+# Large model files (if any)
+*.pkl
+*.model
+*.bin
+
+# ====== TESTING ======
+coverage/
+.nyc_output/
+.coverage
+htmlcov/
+
+# ====== SECURITY ======
+# SSL certificates and keys
+*.pem
+*.key
+*.crt
+ssl/
+
+# API keys and secrets (double protection)
+secrets.json
+credentials.json
+config/secrets.py
+
+# ====== DEPLOYMENT ======
+# Deployment specific files
+.vercel/
+.netlify/
+.aws/
+
+# ====== MISC ======
+# Test files we created during development
+test_*.pdf
+test_*.txt
+test_upload.html
+
+# Cache directories
+.cache/
+.parcel-cache/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Temporary folders
+tmp/
+temp/
