@@ -14,21 +14,21 @@ const Testimonials = () => {
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="rounded-lg border border-gray-200 bg-white p-8 shadow-lg">
             <p className="text-lg font-medium text-gray-900">
-              "The best resume builder I've ever used. I got a job in less than a week!"
+              &ldquo;The best resume builder I&apos;ve ever used. I got a job in less than a week!&rdquo;
             </p>
             <p className="mt-4 text-sm text-gray-500">- John Doe</p>
           </div>
 
           <div className="rounded-lg border border-gray-200 bg-white p-8 shadow-lg">
             <p className="text-lg font-medium text-gray-900">
-              "I was able to create a professional resume in minutes. Highly recommended!"
+              &ldquo;I was able to create a professional resume in minutes. Highly recommended!&rdquo;
             </p>
             <p className="mt-4 text-sm text-gray-500">- Jane Smith</p>
           </div>
 
           <div className="rounded-lg border border-gray-200 bg-white p-8 shadow-lg">
             <p className="text-lg font-medium text-gray-900">
-              "I love the real-time feedback feature. It helped me improve my resume a lot."
+              &ldquo;I love the real-time feedback feature. It helped me improve my resume a lot.&rdquo;
             </p>
             <p className="mt-4 text-sm text-gray-500">- Peter Jones</p>
           </div>

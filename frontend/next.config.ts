@@ -10,3 +10,5 @@ const nextConfig: NextConfig = {
   basePath: '',
   assetPrefix: '',
 };
+
+export default nextConfig;

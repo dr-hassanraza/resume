@@ -1,7 +1,7 @@
 # Netlify configuration for Resume Optimizer Chatbot
 [build]
   # Build command for Next.js frontend
-  command = "cd frontend && npm install && npm run build"
+  command = "cd frontend && npm ci && npm run build"
   
   # Directory to publish (Next.js output)
   publish = "frontend/out"
@@ -23,7 +23,7 @@
   status = 200
   force = false
 
-# Handle Next.js routing (SPA fallback)
+# Handle Next.js routing - serve index.html for all routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
