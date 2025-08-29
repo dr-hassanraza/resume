@@ -21,7 +21,11 @@ class Settings(BaseSettings):
     Z_AI_API_KEY: str = "" # Added for Z.AI integration
     
     # CORS
-    ALLOWED_HOSTS: List[str] = ["http://localhost:3000", "http://localhost:3001", "http://127.0.0.1:3000", "http://127.0.0.1:3001"]
+    CORS_ORIGINS: str = "http://localhost:3000,http://localhost:3001,https://resumeoptimize.netlify.app,*"
+    
+    @property
+    def ALLOWED_HOSTS(self) -> List[str]:
+        return [origin.strip() for origin in self.CORS_ORIGINS.split(",")]
     
     # File uploads
     MAX_FILE_SIZE: int = 10 * 1024 * 1024  # 10MB
