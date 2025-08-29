@@ -9,10 +9,7 @@ from typing import Dict, List
 import logging
 from datetime import datetime
 
-try:
-    from app.core.config import settings
-except ImportError:
-    from app.core.config_local import settings
+from app.core.config import settings
 from app.core.database import engine, SessionLocal
 from app.api.v1 import auth, resumes, chat, analytics, enterprise
 from app.services.chat_manager import ChatManager
